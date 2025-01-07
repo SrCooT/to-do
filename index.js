@@ -24,11 +24,11 @@ const saveTodo = (text) =>{
     todo.appendChild(doneBtn);
     
     const editBtn = document.createElement("button");
-    editBtn.classList.add("finalizado-check")
+    editBtn.classList.add("finalizado-edit")
     editBtn.innerHTML = '✏️';
     todo.appendChild(editBtn);
     const deleteBtn = document.createElement("button");
-    deleteBtn.classList.add("finalizado-check")
+    deleteBtn.classList.add("finalizado-delete")
     deleteBtn.innerHTML = '↩️';
     todo.appendChild(deleteBtn);
 
@@ -49,6 +49,11 @@ if(inputValue) {
 };
 });
 
+document.addEventListener("click", (e) =>{
+    const targetEL = e.target;
+    const parentEL = targetEL.closest("div")
 
-
-//Eventos
+    if(targetEL.classList.contains("finalizado-check")){
+        parentEL.classList.toggle("done");
+    }
+});
