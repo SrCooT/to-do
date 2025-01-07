@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: rgb(61,130,152);
+background: linear-gradient(45deg, rgba(61,130,152,1) 35%, rgba(18,50,194,0.9582366589327146) 50%);
+}
+
+
+
+button{
+    background-color: #fdfdfd;
+    color: blue;
+    border: 2px solid blue;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    transition: 0.4s;
+    border: none;
+}
+
+
+button:hover{
+    background-color: rgb(164, 164, 245);
+}
+
+input, select{
+    padding: 0.25rem 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+main{
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+
+#todo-form p, #edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.controle-de-tabela{
+    display: flex;
+}
+
+.controle-de-tabela input {
+    margin-right: 0.3rem;
+}
+
+.cancelar{
+    margin-top: 1rem;
+}
+
+#menu{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#menu h4{
+    margin-bottom: .5rem;
+}
+
+.search{
+    border-right: 1px solid #ccc;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search form{
+    display: flex;
+}
+
+
+.search input{
+    width: 100%;
+    margin-bottom: 0.3rem;
+}
+
+.filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter select{
+    flex: 1;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    transition: .3s;
+
+}
+
+
+.todo h3{
+    flex:1;
+    font-size: 0.9rem;    
+}
+
+.todo button{
+    margin-left: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.done{
+    background-color: #395169;
+}
+
+.done h3{
+    text-decoration: line-through;
+    font-style: italic;
+}

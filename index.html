@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>todo-list</title>
+  </head>
+  <body>
+  <main>
+    <header>
+      <h1> Lista de Tarefa</h1>
+    </header>
+    <form id="todo-form">
+      <p>Adicione a sua tarefa</p>
+      <div class="controle-de-tabela">
+        <input
+          type="text"
+          name="todo-input"
+          id="todo-input"
+          placeholder="o que vai fazer?"
+        />
+        <button type="submit" id="todo-button">➕</button>
+    </form>
+</div>
+    <form id="edit-form" class="hide">
+        <p>Edite sua tarefa:</p>
+        <div class="controle-de-tabela">  
+        <input type="text" name="todo-input" id="input-edit">
+        <button type="submit">
+            ✅
+        </button>
+    </div>
+        <button id="cancelar">❌</button>
+    </form>
+    <div id="menu">
+        <div class="search">
+            <h4>Pesquisa</h4>
+            <form>
+                <input type="text" name="search-input" id="serach-input"
+                placeholder="Pesquisar tarefa">
+                <button class="reset-button">↩️</button>
+            </form>
+        </div>
+            <div class="filter">
+                <h4>filtrar:</h4>
+                <select name="filter-select" id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo done">
+                <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finalizado-check">
+                    👍🏽
+                </button>
+                <button class="finalizado-cancelado">
+                    ✏️
+                </button>
+                
+                <button class="finalizado-return">
+                    ↩️
+                </button>
+            </div>
+            <div class="todo">
+                <h3>um minuto pra falar</h3>
+                <button class="finalizado-check">
+                    👍🏽
+                </button>
+                <button class="finalizado-cancelado">
+                    ✏️
+                </button>
+
+                <button class="finalizado-return">
+                    ↩️
+                </button>
+            </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</html>
